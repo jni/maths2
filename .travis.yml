@@ -18,7 +18,8 @@ before_script:
   - git config --global user.email "juan.n@unimelb.edu.au"
   - git config --global user.name "Juan Nunez-Iglesias"
 script:
-  - python setup.py test
+  - python setup.py develop
+  - py.test
 after_success:
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
