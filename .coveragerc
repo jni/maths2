@@ -6,6 +6,7 @@ omit =
     */_version.py
     *versioneer.py
     setup.py
+    docs/*
 
 [report]
 # Regexes for lines to exclude from consideration
