@@ -2,7 +2,10 @@
 [run]
 branch = True
 source = maths2
-omit = */_version.py
+omit =
+    */_version.py
+    *versioneer.py
+    setup.py
 
 [report]
 # Regexes for lines to exclude from consideration
